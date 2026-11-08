@@ -8,8 +8,13 @@
 <title>冠军之路 Demo 2.0 · 电竞生涯模拟器</title>
 <meta name="description" content="十七岁加入青训，从第一场试训打到世界赛。手机打开即可开始你的电竞生涯。">
 <link rel="stylesheet" href="app-93e7c6ba1164.css">
+<style>.game-picture{display:contents}</style>
 </head>
 <body>
+<template id="initial-art"><div hidden aria-hidden="true"><picture><source type="image/avif" srcset="media/cover.avif?v=8fdb4dc0c545"><img loading="eager" fetchpriority="high" src="media/cover.webp?v=8fdb4dc0c545" alt=""></picture>
+<picture><source type="image/avif" srcset="media/stages-m_rookie.avif?v=4bdd67420d48"><img loading="eager" fetchpriority="low" src="media/stages-m_rookie.webp?v=4bdd67420d48" alt=""></picture>
+<picture><source type="image/avif" srcset="media/stages-f_rookie.avif?v=0ed96b142d1e"><img loading="eager" fetchpriority="low" src="media/stages-f_rookie.webp?v=0ed96b142d1e" alt=""></picture></div></template>
+<script>{const t=document.getElementById("initial-art");t.replaceWith(t.content);}</script>
 <header class="mast"><div class="mast-inner">
  <div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>冠军之路</span><span class="brand-sub">电竞生涯模拟器</span></div>
  <nav aria-label="游戏工具"><button id="labBtn" class="nav-btn">战术室</button><button id="helpBtn" class="nav-btn">玩法</button><button id="journalBtn" class="nav-btn" disabled>手记</button><button id="fileBtn" class="nav-btn">存档</button></nav>
@@ -19,6 +24,6 @@
 <dialog id="modal"><div class="modal-head"><h2 id="modalTitle"></h2><button id="closeModal" aria-label="关闭窗口">×</button></div><div id="modalBody"></div></dialog>
 <input id="loadFile" type="file" accept=".json,application/json" hidden>
 
-<script src="game-a898cfb5c86a.js"></script>
+<script src="game-9449de1b735b.js"></script>
 </body>
 </html>
